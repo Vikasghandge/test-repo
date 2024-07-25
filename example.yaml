@@ -18,4 +18,4 @@
   - name: copy index.html
     copy:
       src: web.html
-      dest: /var/www/html/index.html
+      dest: /var/www/html/index.html 
