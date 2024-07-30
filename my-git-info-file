@@ -1,0 +1,31 @@
+git guidence -------
+first of all create you need to create your account on git.
+make sure don't forget your git username and password.
+now lets start creating git repository. 
+create one reop give the name to repo ex[my_test-repo] and add readme file into that repo.
+if your repo is public then no need to ssh or token but if your repo is private then you have to crate on token.
+how to create token?
+go into git setting scroll down to end you will get devlpoer setting then create one classic token.
+and keep it private make sure,
+now your repo ready to clone on your machine.
+take ssh of your server then create one directory [viksa] cd vikas for public git-repo you need to run some commands.
+cd /vikas    
+git init
+git config --global user.name "vikasghandge"
+git config --global user.email "your git password ********* "
+to check run command git config --list ----> it will show list of config users
+now you can use git  clone command.
+git clone https://github.com/Vikasghandge/test-repo.git  ----> this commnad will clone your repo into your machine basically it will create one copy repo on your machine.  <------  this is for public repository
+
+for private repository.
+git clone https://<add here your token url > @github.com/Vikasghandge/test-repo.git ---> with help of this you can access privte repository.
+after successfully clone your repo into machine you can create files or directories and branhes.
+lets create one file 
+cd /vikas/my_test-repo     touch example.txt
+git add (.) for all or exmaple.txt ----> git add command will add your file into staging area.
+git commit -m " adding example.txt into remote repo" ---> it will commit changes and create snapshor or backup
+it will generate commit id [git log] <----- for git logs.
+git push origin main ----> this command will push your file into remote repository finally.
+git pull origin main ----> this command will retrive data direct into your working area.
+git fetch origin main 
+ 
