@@ -39,4 +39,4 @@ git branch <devops> <----- it will create new branch
 git checkout -b <devops2> ----> this will create new branch and switch that branch
 git merge <branch name> ----> git merge it will merge two branche with togather.
 git stash ----> it will save temporary file in case if you dont want save this file now.
-.git
+.gitignore ---
