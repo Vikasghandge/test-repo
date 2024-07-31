@@ -1,0 +1,22 @@
+suppose you have a data into your private instance and you want to access it which dont have any public ip to
+access. and now you got an task to provide a internet that pvt server.
+first of all go into vpc and click to create vpc -----> it will create vpc name the vpc <my_project-vpc> 
+then you need to give cidr ip range for vpc 
+10.0.0.0/16   CIDR ip range  click to create vpc.
+now you need to create subnets for your servers.
+go into subnets then crate subnet 
+public subnet  ip range CIDR 10.0.0.0/24  -----> it will lock ranges
+private subnet ip range CIDR 10.0.1.0/24  ----->  same
+after you successfully created pub and pvt subnet you need to create pub and pvt route table.
+create public route table  ---> for public ypu need to create internet gateway.
+create privet route table  ---> for private you need to create nat gateway.
+go into internate gatway name the gateway ex. <igw-projetc> create it and attach it to vpc
+go into nat gateway create nat gateway ex. <my-natgateway>.
+now you need to make sure your natgateway should be in public subnet. thats why choose public subnet.
+now come to back in route table.
+select public route table --> go into edit route ---> then select intergate ---> then subnet accositation select public subnet.
+now come in pvt route table
+edit route ----> then select nat-gatway---> then subnet association select private subnet.
+make sure elastic ip associated.
+your setup is now ready.
+
