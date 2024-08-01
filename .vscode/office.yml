@@ -7,5 +7,4 @@
        apt: 
          update_cache: yes
 
-  -name: ngnix
-          
+  - name: ngnix
