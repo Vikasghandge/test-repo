@@ -1,7 +1,7 @@
 ---
-  -name: install ngnix on my server 
-   hosts: ubuntuserver
-   become: yes
+  - name: install ngnix on my server 
+    hosts: ubuntuserver
+    become: yes
    tasks: 
      - name: update apt cache
        apt: 
