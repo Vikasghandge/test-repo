@@ -1,3 +1,4 @@
 ---
   -name: install ngnix on my server 
-   hosts: ubuntuserver 
+   hosts: ubuntuserver
+   become 
