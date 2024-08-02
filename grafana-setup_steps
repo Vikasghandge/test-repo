@@ -5,4 +5,4 @@ ans -- Grafana is an open-source solution for running data analytics with the he
 how to setup grafana?
 first of all we need to create one server.
 ex.  grafana server.
-config security groups allow inbound ex. all traffic allow, port 8080
+config security groups allow inbound ex. all traffic allow, port 8080 , port 3000. http and https and ssh.
