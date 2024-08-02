@@ -6,3 +6,4 @@ how to setup grafana?
 first of all we need to create one server.
 ex.  grafana server.
 config security groups allow inbound ex. all traffic allow, port 8080 , port 3000. http and https and ssh.
+launch server.
