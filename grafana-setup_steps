@@ -11,3 +11,4 @@ launch server.
 wget https://dl.grafana.com/oss/release/grafana-6.1.6.linux-amd64.tar.gz  ---> it will downloade grafana from internet.
 tar -zxvf grafana-6.1.6.linux-amd64.tar.gz ----> this commnad will extract grafana.
 cd grafana-2.5.0/ -----> change directory inter in grafana.
+./bin/grafana-server web  ----> this will run grafana
