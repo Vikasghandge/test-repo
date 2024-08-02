@@ -9,3 +9,4 @@ config security groups allow inbound ex. all traffic allow, port 8080 , port 300
 launch server.
 
 wget https://dl.grafana.com/oss/release/grafana-6.1.6.linux-amd64.tar.gz  ---> it will downloade grafana from internet.
+tar -zxvf grafana-6.1.6.linux-amd64.tar.gz ----> this commnad will ex
