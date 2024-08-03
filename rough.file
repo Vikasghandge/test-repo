@@ -20,6 +20,7 @@ another mathod is cross region read replica.
 
 
 suppose your private server is down then how to ssh
-1
+1] bastion host concept / jump server
+2
 
 
