@@ -8,5 +8,8 @@
 
 how to connect your private ec2.
 1] using the bastion host concept
+ssh -i key os@private key with the help of nat gateway.
+
+
 
 
