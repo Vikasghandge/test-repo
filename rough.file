@@ -23,6 +23,7 @@ suppose your private server is down then how to ssh
 1] bastion host concept / jump server
 2] ec2 connect
 3] session manager
-4] securtiy group configuration check
+4] securtiy group configuration checkup necessecery ports allow .
+5] using 
 
 
