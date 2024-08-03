@@ -28,6 +28,7 @@ suppose your private server is down then how to ssh
 
 how many security group you can attach to your ec2 instance 
 ----->  5 we can attach
-rule pr security group 60 inbound 60 
+rule pr security group 60 inbound 60 outbound
+sg pr vpc 500
 
 
