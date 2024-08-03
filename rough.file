@@ -1,2 +1,3 @@
 4 diffrent ways to connect our ec2 instance
-1] ssh clinet using command ssh -i <k
+1] ssh clinet using command ssh -i <your key> os@<your pulic ip>
+2] using 
