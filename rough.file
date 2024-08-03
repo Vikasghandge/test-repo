@@ -12,5 +12,5 @@ ssh -i key os@private key with the help of nat gateway.
 
 
 in aws what servecies are not region specific
-i
+iam role, cloud front, lamb
 
