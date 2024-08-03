@@ -2,4 +2,5 @@
 1] ssh clinet using command ssh -i <your key> os@<your pulic ip>
 2] using ec2 connect we can direct connect our ec2
 3] session manager 
-4] aws cl
+4] aws cli.
+5]using i am 
