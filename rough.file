@@ -14,5 +14,6 @@ ssh -i key os@private key with the help of nat gateway.
 in aws what servecies are not region specific
 iam role, cloud front, lambda fuction. dyanamodb, s3, route53.
 
+what i case database diaster 
 
 
