@@ -19,6 +19,7 @@ using snapshot aws rds takes snapshot on the dailybasis.
 another mathod is cross region read replica.
 
 
-suppose your 
+suppose your private server is down then how to ssh
+1
 
 
