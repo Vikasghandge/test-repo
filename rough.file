@@ -32,7 +32,7 @@ rule pr security group 60 inbound 60 outbound
 sg pr vpc 500.
 
 diffrence between git fetch and git pull
-
+git pull is a combination of git me
 
 
 what is presigned url ?
