@@ -32,7 +32,8 @@ rule pr security group 60 inbound 60 outbound
 sg pr vpc 500.
 
 diffrence between git fetch and git pull
-git pull is a combination of git merge and git pull it will mergechange 
+git pull is a combination of git merge and git pull it will mergechange in our working directory.
+git fetch will fetch 
 
 
 what is presigned url ?
