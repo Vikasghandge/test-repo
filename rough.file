@@ -41,7 +41,8 @@ make sure person should be authenticated.
 presined url used for creator to upload a new object.
 signed url about to acceesing existing url.
 
-signed url - used for to upload new obect
+signed url - used for to upload new object into your s3 buccket.
+pe
 
 
 
