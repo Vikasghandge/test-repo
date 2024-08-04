@@ -42,7 +42,7 @@ presined url used for creator to upload a new object.
 signed url about to acceesing existing url.
 
 signed url - used for to upload new object into your s3 buccket.
-pe
+presigned url used for accessing existing url.
 
 
 
