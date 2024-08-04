@@ -35,6 +35,7 @@ sg pr vpc 500.
 what is presigned url ?
 pre signed url provides a short term acess of private object.
 where we can assign acess on temporary basis.
-in case another person is not aws user so we can give him 
+in case another person is not aws user so we can give him short term access.
+make sure person
 
 
