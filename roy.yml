@@ -1,2 +1,4 @@
 ---
-  - name: this is file for ng
+  - name: this is file for nginx install
+    hosts: all
+    bec
