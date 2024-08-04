@@ -26,7 +26,8 @@ git add (.) for all or exmaple.txt ----> git add command will add your file into
 git commit -m " adding example.txt into remote repo" ---> it will commit changes and create snapshor or backup
 it will generate commit id [git log] <----- for git logs.
 git push origin main ----> this command will push your file into remote repository finally.
-git pull origin main ----> this command will retrive data direct into your working area it is combination of git .
+git pull origin main ----> this command will retrive data direct into your working area.
+ it is combination of git fetch and git merge changes into your working directory.
 git fetch origin main ----> this command will retrive your data into local repo from remote repo.
 suppose if you by mistaken deleted your file from local how to retrive.
 git checkout -f ----> this command will retrive back your file.
