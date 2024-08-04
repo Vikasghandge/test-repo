@@ -4,4 +4,5 @@
     become: yes
     tasks:
         - name: install nginx
-        
+          apt:
+          
