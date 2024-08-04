@@ -31,6 +31,9 @@ how many security group you can attach to your ec2 instance
 rule pr security group 60 inbound 60 outbound
 sg pr vpc 500.
 
+diffrence between git fetch and git pull
+
+
 
 what is presigned url ?
 pre signed url provides a short term acess of private object.
