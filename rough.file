@@ -49,7 +49,20 @@ signed url - used for to upload new object into your s3 buccket.
 presigned url used for accessing existing url.
 basically we use it for for give tempoerary access to end user hw might has now aws account.
 we can grant permission to him for specifictime he can access your private resources.
-till the url expire
+till the url expire.
+
+s3 life cycle.
+1] s3 standard  ------>  it is one of the costest storage class
+2] s3 standard infrequent ----> 
+3] intelligent tireing -----> it will move data according to use.
+4] glacier
+5] deep archive  ----> cost saving
+
+how intelligent tirering works.
+suppose my data is in s3 standard but this data i am not using frequently after 30 days iw will put my
+data into standard to s3 infrequent.
+
+standard tire -----> infrequent tire -----> deep archive (if you access data frequently then he will move)
 
 
 
