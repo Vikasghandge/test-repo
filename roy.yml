@@ -1,4 +1,6 @@
 ---
   - name: this is file for nginx install
     hosts: all
-    bec
+    become: yes
+    tasks:
+        -
