@@ -43,7 +43,8 @@ signed url about to acceesing existing url.
 
 signed url - used for to upload new object into your s3 buccket.
 presigned url used for accessing existing url.
-basically we use it for for give tempoerary access to end user hw might has now 
+basically we use it for for give tempoerary access to end user hw might has now aws account.
+we can grant permission to him for specific
 
 
 
