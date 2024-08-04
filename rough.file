@@ -39,7 +39,8 @@ in case another person is not aws user so we can give him short term access.
 make sure person should be authenticated.
 
 presined url used for creator to upload a new object.
-signed url about to acceesing 
+signed url about to acceesing existing url.
+
 
 
 
