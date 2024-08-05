@@ -10,4 +10,5 @@ cp /prometheus /usr/local/bin/
 cp /promtool /usr/local/bin/
 vim prometheus.yml
 ./prometheus --config.file=prometheus.yml &
- http://localhost:9090/metrics.
+ http://localhost:9090/metrics
+  http://<>:9090/metrics.
