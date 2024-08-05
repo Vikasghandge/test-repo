@@ -26,7 +26,7 @@ suppose your data in standard class but you dont access it frequently it will mo
 
   (5) what is the corss region replication and how it help us in diaster recover.
   -- cross region replication allow to us to replicate data one region to diffrent region.
-  -- if our one serevr
+  -- if our one serevr  goes down. 
 
 
 
