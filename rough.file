@@ -65,5 +65,5 @@ data into standard to s3 infrequent.
 standard tire -----> infrequent tire -----> deep archive (if you access data frequently then he will move)
 
 what is the cross region replication in s3.
-cross region replication allow to one s3 
+cross region replication allow to one s3 region to another region 
 
