@@ -9,3 +9,4 @@ cd <promethus file>
 cp /prometheus /usr/local/bin/
 cp /promtool /usr/local/bin/
 vim prometheus.yml
+./prometheus --config.file=prometheus.yml &
