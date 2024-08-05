@@ -74,5 +74,6 @@ basically both are use to grant or deny  permission for s3 resources.
 s3 buccket police works on entire buccket level 
 while acl works on object level  .
 if we attached police to buccket it will work entire buccket level.
-while acl work on 
+while acl work on individual object level.
+
 
