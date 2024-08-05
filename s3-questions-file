@@ -32,7 +32,8 @@ suppose your data in standard class but you dont access it frequently it will mo
   (6) explain what is access control list and s3 buccket policies.
   -- acl and s3 buccet policies provide us to grant permisions allow or deny to our s3 resouces.
   -- s3 buccet polices work on entire buccekt level.
-  -- while 
+  -- while acl works on individual object level.
+  
 
 
 
