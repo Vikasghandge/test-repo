@@ -8,4 +8,4 @@ tar -zxvf <your promethus>
 cd <promethus file>
 cp /prometheus /usr/local/bin/
 cp /promtool /usr/local/bin/
-vim prom
+vim prometheus.yml
