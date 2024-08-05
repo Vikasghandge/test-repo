@@ -3,3 +3,5 @@ allow necesscery port security.
 launch server.
 sudo apt-get update
 wget https://github.com/prometheus/prometheus/releases/download/v2.54.0-rc.0/prometheus-2.54.0-rc.0.linux-amd64.tar.gz
+
+tar -zxvf your
