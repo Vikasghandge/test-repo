@@ -15,5 +15,5 @@ s3 provide various ways to store data in s3
 first standard classs --it costest storage class in s3 we use for frequently access data.
 another is s3 standard infrequent --> where we use for infrequently access data.
 s3 intelligent tireing - we s3 it automatically move data according to use.
-suppose your data in standard class but you dont access it frequently it will move your data
+suppose your data in standard class but you dont access it frequently it will move your data automatically into in
 
