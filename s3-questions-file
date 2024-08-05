@@ -6,4 +6,4 @@ Explain the concept of S3 buckets and objects. How is data organized in S3?
  S3 uses a flat namespace where data is organized into buckets, which are top-level containers for storing objects. Objects are the actual data files stored within buckets and can range from small files to large data sets.
 
 buccket means ---> it is like container where we can store our data.
- 
+object -----> object means act 
