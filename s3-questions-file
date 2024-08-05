@@ -29,7 +29,8 @@ suppose your data in standard class but you dont access it frequently it will mo
   -- if our one serevr  goes down. another region data available for us.
   -- it will reduce redudency.
 
-  (6) explain what is access control list and s3 bucckeet
+  (6) explain what is access control list and s3 buccket policies.
+  -- 
 
 
 
