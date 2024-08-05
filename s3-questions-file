@@ -41,6 +41,7 @@ suppose your data in standard class but you dont access it frequently it will mo
 
   (8) How can you monitor S3 usage and performance, and what AWS services can you use for this purpose?
   --  You can monitor S3 usage and performance using AWS CloudWatch for metrics like data transfer, request rates, and bucket size. You can also use S3 access logs for detailed information on object access, including who accessed the data and when.
+
   
 
 
