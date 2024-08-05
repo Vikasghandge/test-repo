@@ -2,7 +2,7 @@
 s3 is the object storage service which provide secure, sclable and durable way to store object in s3.
 In a DevOps environment, S3 is used for storing application artifacts, backups, logs, and as a source for deploying code and assets.
 
-Explain the concept of S3 buckets and objects. How is data organized in S3?
+  (2 )Explain the concept of S3 buckets and objects. How is data organized in S3?
  S3 uses a flat namespace where data is organized into buckets, which are top-level containers for storing objects. Objects are the actual data files stored within buckets and can range from small files to large data sets.
 
 buccket means ---> it is like container where we can store our data.
