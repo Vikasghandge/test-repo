@@ -11,5 +11,6 @@ object -----> object means actual data into buccket.
 
 what are the storage classes in s3?
 storage clasess are we use basically for reduce cost.
-s3 provide v
+s3 provide various ways to store data in s3
+
 
