@@ -20,7 +20,7 @@ suppose your data in standard class but you dont access it frequently it will mo
 --deep archive - if we dont access our data from more than 180 days it will move data in deep arcchive.
  
  (4)  How can you secure data in S3 buckets, and what are the best practices for implementing data access controls
-  -- using buccet 
+  -- using buccet policies and access control list
 
 
 
