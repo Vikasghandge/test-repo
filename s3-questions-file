@@ -14,5 +14,5 @@ storage clasess are we use basically for reduce cost.
 s3 provide various ways to store data in s3
 first standard classs --it costest storage class in s3 we use for frequently access data.
 another is s3 standard infrequent --> where we use for infrequently access data.
-s3 intelligent t
+s3 intelligent tireing - we s3 it 
 
