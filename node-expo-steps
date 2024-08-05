@@ -8,4 +8,5 @@ tar xvzf node_exporter-0.17.0.linux-amd64.tar.gz
 cd node_exporter-0.17.0.linux-amd64/
  ./node_exporter &
   http://localhost:9100/metrics.
-  http://<your node server-ip>:9100
+  http://<your node server-ip>:9100/metrics.
+  
