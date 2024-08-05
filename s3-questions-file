@@ -1,4 +1,4 @@
-        < what is s3? > 
+ (1)       < what is s3? > 
 s3 is the object storage service which provide secure, sclable and durable way to store object in s3.
 In a DevOps environment, S3 is used for storing application artifacts, backups, logs, and as a source for deploying code and assets.
 
@@ -18,6 +18,7 @@ s3 intelligent tireing - we s3 it automatically move data according to use.
 suppose your data in standard class but you dont access it frequently it will move your data automatically into infrequent. if your basiclly it move data according to use.
 s3 glacerr class
 deep archive - if we dont access our data from more than 180 days it will move data in deep arcchive.
+
 
 
 
