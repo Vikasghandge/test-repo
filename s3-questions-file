@@ -33,7 +33,9 @@ suppose your data in standard class but you dont access it frequently it will mo
   -- acl and s3 buccet policies provide us to grant permisions allow or deny to our s3 resouces.
   -- s3 buccet polices work on entire buccekt level.
   -- while acl works on individual object level.
-  
+
+  (7)
+
 
 
 
