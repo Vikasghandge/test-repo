@@ -17,6 +17,6 @@ another is s3 standard infrequent --> where we use for infrequently access data.
 s3 intelligent tireing - we s3 it automatically move data according to use.
 suppose your data in standard class but you dont access it frequently it will move your data automatically into infrequent. if your basiclly it move data according to use.
 s3 glacerr class
-de
+deep archive - if we dont 
 
 
