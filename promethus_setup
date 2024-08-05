@@ -7,4 +7,4 @@ wget https://github.com/prometheus/prometheus/releases/download/v2.54.0-rc.0/pro
 tar -zxvf <your promethus>
 cd <promethus file>
 cp /prometheus /usr/local/bin/
-cp 
+cp /prometheus /usr/local/bin/
