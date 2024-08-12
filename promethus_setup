@@ -102,5 +102,7 @@ fi
 _____________________________________________________________________________________________________________
 chmod +x install_prometheus.sh
 sudo ./install_prometheus.sh
+sudo systemctl status prometheus
+sudo journalctl -u prometheus
 
   
