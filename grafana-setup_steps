@@ -61,3 +61,6 @@ if sudo netstat -tuln | grep -q 3000; then
 else
     echo "Grafana is not listening on port 3000. Please check the service status and logs."
 fi
+___________________________________________________________________________________________________________
+chmod +x install_grafana.sh
+sudo ./install_grafana.sh
