@@ -100,5 +100,7 @@ else
     sudo journalctl -u prometheus --since "10 minutes ago"
 fi
 _____________________________________________________________________________________________________________
+chmod +x install_prometheus.sh
+sudo ./install_prometheus.sh
 
   
