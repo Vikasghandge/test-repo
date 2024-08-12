@@ -99,5 +99,6 @@ else
     sudo systemctl status prometheus
     sudo journalctl -u prometheus --since "10 minutes ago"
 fi
+_____________________________________________________________________________________________________________
 
   
