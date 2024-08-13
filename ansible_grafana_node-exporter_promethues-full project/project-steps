@@ -7,4 +7,5 @@ in the master server you need
 1] grafana
 2] prometheus
 3] ansible
-
+ and other node server 
+ 
