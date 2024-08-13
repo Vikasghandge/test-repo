@@ -6,4 +6,4 @@ first of all you you need 3 servers.
 in the master server you need 
 1] grafana
 2] prometheus
-
+3] anisble 
