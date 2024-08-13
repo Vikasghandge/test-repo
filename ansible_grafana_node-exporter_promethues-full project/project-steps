@@ -4,4 +4,6 @@ first of all you you need 3 servers.
 3] server ----> node-02
 
 in the master server you need 
-1
+1] grafana
+2] prometheus
+
