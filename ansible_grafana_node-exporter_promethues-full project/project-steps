@@ -8,4 +8,5 @@ in the master server you need
 2] prometheus
 3] ansible
  and other node server 
- 
+ 1] node-exporter
+ 2
