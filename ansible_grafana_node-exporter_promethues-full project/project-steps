@@ -379,7 +379,8 @@ node_expo on ----> 9100
 prometheus ----> 9090
 ____________________________________________________________________________________
 now need to add ip in prometheus
-cd /etc/promet
+cd /etc/prometheus
+sudo vim 
 
 
 
