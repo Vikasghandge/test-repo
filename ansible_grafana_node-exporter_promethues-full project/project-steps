@@ -215,6 +215,7 @@ ex.   node_install.yml
       systemd:
         name: node_exporter
         state: status
-
+---------------------------------------------------------------------------------
+paste the contain 
 
 
