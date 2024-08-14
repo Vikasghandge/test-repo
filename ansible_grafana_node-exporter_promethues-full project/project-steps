@@ -131,7 +131,7 @@ you can try it through master server
 create one yml file
 ex.   node_install.yml
 ---
-- name: Install Node Exporter
+- name: Install Node Exporter on EC2 Ubuntu
   hosts: all
   become: yes
   vars:
@@ -142,7 +142,7 @@ ex.   node_install.yml
     service_file: "/etc/systemd/system/node_exporter.service"
 
   tasks:
-    - name: Update and install dependencies
+    - name: Update system and install dependencies
       apt:
         update_cache: yes
         name:
@@ -212,9 +212,14 @@ ex.   node_install.yml
         state: started
 
     - name: Check Node Exporter service status
-      systemd:
-        name: node_exporter
-        state: status
+      command: systemctl status node_exporter
+      register: service_status
+      changed_when: false
+
+    - name: Print Node Exporter service status
+      debug:
+        msg: "{{ service_status.stdout }}"
+
 ---------------------------------------------------------------------------------
 paste the contain and pull this play book on your server and run it.
 ex. ansible-playbook <your play booke name> node_install.yml
