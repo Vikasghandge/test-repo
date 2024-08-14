@@ -45,4 +45,4 @@ cd /etc/ansible/
 sudo vim hosts
 paster your node server ip here 
 ex.   [ubuntuserver]
-  
+  node-01 ansible_host
