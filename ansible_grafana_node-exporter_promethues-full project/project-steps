@@ -374,7 +374,8 @@ ex. 10.0.0.0:3000 ---> verify
 for promethues <your prometheus ip>:9090
 ex. 10.0.0.1:9090
 
-grafana run of port ----
+grafana run of port ----> 3000
+node_expo on ----> 
 
 
 
