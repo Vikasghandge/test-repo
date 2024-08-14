@@ -391,7 +391,7 @@ it will open grafana
 username --> admin
 password --> admin
 set password.
-in the grafana 
+in the grafana select data source 
 
 
 
