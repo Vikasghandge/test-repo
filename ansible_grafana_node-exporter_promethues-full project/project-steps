@@ -61,4 +61,4 @@ now we have sucessfully did setup our ansible and node servers now we need to se
 grafana promethueus and node_exporter
 first of all take ssh of your node servers
 sudo apt-get update
-
+sudo vim install_node_exporter
