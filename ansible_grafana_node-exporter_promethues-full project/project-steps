@@ -41,3 +41,4 @@ paste the key as it is another node server.
 now we need to config our node servers ip into your master-server
 copy both node server ip
 in the master server 
+cd /etc/ans
