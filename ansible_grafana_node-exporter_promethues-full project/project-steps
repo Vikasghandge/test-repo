@@ -367,7 +367,7 @@ sudo chmod +x install_grafana.sh  ---> adding execution permission
 ____________________________________________________________________________________
 
 verify through ip on google is it woring or not
-for node_exporter <your node server ip>: 
+for node_exporter <your node server ip>:9
 
 
 
