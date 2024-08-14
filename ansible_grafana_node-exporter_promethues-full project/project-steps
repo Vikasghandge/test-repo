@@ -369,7 +369,9 @@ ________________________________________________________________________________
 verify through ip on google is it woring or not
 for node_exporter <your node server ip>:9100 
 ex. 192.165.0.0:9100  ---> verify
-for grafana <your grafana server ip>
+for grafana <your grafana server ip>:3000 
+ex. 10.0.0.0:3000
+
 
 
 
