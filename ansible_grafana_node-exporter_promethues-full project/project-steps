@@ -19,5 +19,12 @@ sudo apt-get update
 first we need to  install ansible on our server.
 sudo vim install_ansible.sh
 -----------------------------------------------------------------------------------
+!#bin/bash
+sudo apt-get update -y
+sudo apt install software-properties-common -y
+sudo apt-add-repository ppa:ansible/ansible
+sudo apt update -y
+# sudo apt install ansible -y
+sudo apt install ansible-core
 
 
