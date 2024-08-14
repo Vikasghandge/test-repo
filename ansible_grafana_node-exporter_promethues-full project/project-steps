@@ -129,5 +129,7 @@ check node_exporter --version
 ______________________________________________________________________________________
 you can try it through master server
 create one yml file
+ex.   node_install.yml
+
 
 
