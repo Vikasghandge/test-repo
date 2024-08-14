@@ -385,7 +385,8 @@ paste your node-serves ip here fo target.
 
 ex. - target ['localhost:9100']
 replace 'localhost' with your node ip.
-now take your master server ip 
+now take your master server ip with port 3000
+<ip>:3000
 
 
 
