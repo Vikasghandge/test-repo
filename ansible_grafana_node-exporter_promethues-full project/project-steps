@@ -220,3 +220,4 @@ paste the contain and pull this play book on your server and run it.
 ex. ansible-playbook <your play booke name> node_install.yml
 
 
+
