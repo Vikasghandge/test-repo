@@ -323,6 +323,44 @@ ________________________________________________________________________________
 sudo apt-get update
 sudo vim install_grafana.sh
 
+#!/bin/bash
+
+# Update and install necessary packages
+sudo apt-get update
+sudo apt-get install -y wget apt-transport-https software-properties-common
+
+# Install Grafana
+echo "Installing Grafana..."
+
+# Add Grafana APT repository
+sudo apt-get install -y software-properties-common
+sudo add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
+wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
+
+# Update package list and install Grafana
+sudo apt-get update
+sudo apt-get install -y grafana
+
+# Start and enable Grafana service
+echo "Starting Grafana..."
+sudo systemctl start grafana-server
+sudo systemctl enable grafana-server
+
+# Verify that Grafana is running
+if sudo systemctl is-active --quiet grafana-server; then
+    echo "Grafana is running successfully."
+else
+    echo "Failed to start Grafana. Checking status and logs..."
+    sudo systemctl status grafana-server
+    sudo journalctl -u grafana-server --since "10 minutes ago"
+fi
+
+# Check if Grafana is listening on port 3000
+if sudo netstat -tuln | grep -q 3000; then
+    echo "Grafana is listening on port 3000."
+else
+    echo "Grafana is not listening on port 3000. Please check the service status and logs."
+fi
 
 
 
