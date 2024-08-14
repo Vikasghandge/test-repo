@@ -224,6 +224,7 @@ grafana and prometheus on your master-servers
 ___________________________________________________________________________________
 take ssh of master server
 first install prometheus
-
+sudo apt-get update
+sudo vim install
 
 
