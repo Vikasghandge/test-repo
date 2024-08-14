@@ -57,4 +57,5 @@ if you want more about ansible setup and how to create ansible playbook
 then ---- ansible_play-book_cinfig-steps
 ansible-playbook-vs-code-guide check this files
 ______________________________________________________________________________________
-now we have sucessfully did setup our ansible and node servers n
+now we have sucessfully did setup our ansible and node servers now we need to setup 
+grafana promethueus and node
