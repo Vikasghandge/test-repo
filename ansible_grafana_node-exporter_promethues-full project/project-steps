@@ -394,7 +394,7 @@ set password.
 in the grafana select data source.
 select prometheus dont select by default
 past your prometheus ip into grafana.
-now we are ready to moniter 
+now we are ready to moniter performnce of your system.
 
 
 
