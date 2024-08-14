@@ -55,4 +55,4 @@ ansible -m ping all.
 confirm ping pong
 if you want more about ansible setup and how to create ansible playbook
 then ---- ansible_play-book_cinfig-steps
-ans
+ansible-playbook-vs-code
