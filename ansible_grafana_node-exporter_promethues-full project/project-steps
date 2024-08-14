@@ -362,6 +362,6 @@ else
     echo "Grafana is not listening on port 3000. Please check the service status and logs."
 fi
 ----------------------------------------------------------------------------------
-
+sudo chmod +x 
 
 
