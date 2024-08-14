@@ -127,6 +127,7 @@ sudo systemctl status node_exporter
 ./install_node_exporter.sh  -----> running node exporter
 check node_exporter --version
 ______________________________________________________________________________________
-you can 
+you can try it through master server
+
 
 
