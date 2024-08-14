@@ -392,7 +392,8 @@ username --> admin
 password --> admin
 set password.
 in the grafana select data source.
-select prometheus dont select 
+select prometheus dont select by default
+past your prometheus ip 
 
 
 
