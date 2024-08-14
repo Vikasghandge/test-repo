@@ -363,6 +363,12 @@ else
 fi
 ----------------------------------------------------------------------------------
 sudo chmod +x install_grafana.sh  ---> adding execution permission
-./install_grafana.sh  --
+./install_grafana.sh  --> run grafana
+____________________________________________________________________________________
+ 
+
+
+
+
 
 
