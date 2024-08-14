@@ -17,5 +17,5 @@ setup master server ----> master_server
 take ssh ok master server
 sudo apt-get update
 first we need to  install ansible on our server.
-
+sudo vim install_
 
