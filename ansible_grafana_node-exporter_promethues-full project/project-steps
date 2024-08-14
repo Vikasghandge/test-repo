@@ -38,3 +38,4 @@ cd .ssh
 sudo vim authroized keys
 paste the the ssh key here which you have created in master server
 paste the key as it is another node server.
+now we need to edit your 
