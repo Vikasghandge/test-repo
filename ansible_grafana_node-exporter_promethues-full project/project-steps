@@ -225,6 +225,8 @@ ________________________________________________________________________________
 take ssh of master server
 first install prometheus
 sudo apt-get update
-sudo vim install
+sudo vim install_prometehus.sh
+
+
 
 
