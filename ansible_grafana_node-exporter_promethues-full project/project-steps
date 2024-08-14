@@ -317,6 +317,7 @@ sudo systemctl status prometheus
 ---------------------------------------------------------------------------------
 sudo chmod +x install_prometheus.sh ---> adding execution permission
 ./install_prometheus.sh  -----> run 
-prometehus set
+prometehus setup done now setup grafana.
+
 
 
