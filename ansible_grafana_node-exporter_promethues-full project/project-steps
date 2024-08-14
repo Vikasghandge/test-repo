@@ -371,7 +371,8 @@ for node_exporter <your node server ip>:9100
 ex. 192.165.0.0:9100  ---> verify
 for grafana <your grafana server ip>:3000 
 ex. 10.0.0.0:3000 ---> verify
-for promethues
+for promethues <your prometheus ip>:9090
+ex. 10.0.0.
 
 
 
