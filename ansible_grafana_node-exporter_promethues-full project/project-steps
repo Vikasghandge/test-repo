@@ -62,4 +62,67 @@ grafana promethueus and node_exporter
 first of all take ssh of your node servers
 sudo apt-get update
 sudo vim install_node_exporter.sh
+--------------------------------------------------------------------------------------
+#!/bin/bash
+
+# Variables
+NODE_EXPORTER_VERSION="1.6.1"  # Update to the latest version as needed
+NODE_EXPORTER_TAR="node_exporter-${NODE_EXPORTER_VERSION}.linux-amd64.tar.gz"
+DOWNLOAD_URL="https://github.com/prometheus/node_exporter/releases/download/v${NODE_EXPORTER_VERSION}/${NODE_EXPORTER_TAR}"
+INSTALL_DIR="/usr/local/bin"
+SERVICE_FILE="/etc/systemd/system/node_exporter.service"
+
+# Update and install dependencies
+echo "Updating system and installing dependencies..."
+sudo apt-get update
+sudo apt-get install -y wget tar
+
+# Download Node Exporter
+echo "Downloading Node Exporter version ${NODE_EXPORTER_VERSION}..."
+wget "${DOWNLOAD_URL}" -O /tmp/${NODE_EXPORTER_TAR}
+
+# Extract the tarball
+echo "Extracting Node Exporter..."
+sudo tar xvf /tmp/${NODE_EXPORTER_TAR} -C /tmp
+
+# Move binaries to the installation directory
+echo "Installing Node Exporter binaries..."
+sudo mv /tmp/node_exporter-${NODE_EXPORTER_VERSION}.linux-amd64/node_exporter ${INSTALL_DIR}
+
+# Clean up
+echo "Cleaning up..."
+rm -rf /tmp/node_exporter-${NODE_EXPORTER_VERSION}.linux-amd64
+rm /tmp/${NODE_EXPORTER_TAR}
+
+# Create Node Exporter user
+echo "Creating Node Exporter user..."
+sudo useradd --no-create-home --shell /bin/false node_exporter
+
+# Create systemd service file
+echo "Creating Node Exporter service file..."
+cat <<EOL | sudo tee ${SERVICE_FILE}
+[Unit]
+Description=Node Exporter
+After=network.target
+
+[Service]
+User=node_exporter
+ExecStart=${INSTALL_DIR}/node_exporter
+
+[Install]
+WantedBy=multi-user.target
+EOL
+
+# Set ownership and reload systemd
+echo "Setting ownership and reloading systemd..."
+sudo chown node_exporter:node_exporter ${SERVICE_FILE}
+sudo systemctl daemon-reload
+sudo systemctl enable node_exporter
+sudo systemctl start node_exporter
+
+# Print status
+echo "Node Exporter installation completed. Checking status..."
+sudo systemctl status node_exporter
+
+
 
