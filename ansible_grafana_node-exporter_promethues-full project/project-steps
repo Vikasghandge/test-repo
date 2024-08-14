@@ -381,7 +381,7 @@ ________________________________________________________________________________
 now need to add ip in prometheus
 cd /etc/prometheus
 sudo vim prometheus.yml ----> config  yml file
-paste your node-serves ip here fo targeting
+paste your node-serves ip here fo target.
 
 
 
