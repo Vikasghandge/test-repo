@@ -216,6 +216,7 @@ ex.   node_install.yml
         name: node_exporter
         state: status
 ---------------------------------------------------------------------------------
-paste the contain and pull this play book on your server and run
+paste the contain and pull this play book on your server and run it.
+ex. ansible-play
 
 
