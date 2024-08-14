@@ -130,6 +130,91 @@ ________________________________________________________________________________
 you can try it through master server
 create one yml file
 ex.   node_install.yml
+---
+- name: Install Node Exporter
+  hosts: all
+  become: yes
+  vars:
+    node_exporter_version: "1.6.1"
+    node_exporter_tar: "node_exporter-{{ node_exporter_version }}.linux-amd64.tar.gz"
+    download_url: "https://github.com/prometheus/node_exporter/releases/download/v{{ node_exporter_version }}/{{ node_exporter_tar }}"
+    install_dir: "/usr/local/bin"
+    service_file: "/etc/systemd/system/node_exporter.service"
+
+  tasks:
+    - name: Update and install dependencies
+      apt:
+        update_cache: yes
+        name:
+          - wget
+          - tar
+        state: present
+
+    - name: Download Node Exporter
+      get_url:
+        url: "{{ download_url }}"
+        dest: "/tmp/{{ node_exporter_tar }}"
+
+    - name: Extract Node Exporter tarball
+      unarchive:
+        src: "/tmp/{{ node_exporter_tar }}"
+        dest: "/tmp/"
+        remote_src: yes
+
+    - name: Move Node Exporter binary to installation directory
+      command: mv /tmp/node_exporter-{{ node_exporter_version }}.linux-amd64/node_exporter {{ install_dir }}
+
+    - name: Clean up
+      file:
+        path: "/tmp/node_exporter-{{ node_exporter_version }}.linux-amd64"
+        state: absent
+
+    - name: Remove tarball
+      file:
+        path: "/tmp/{{ node_exporter_tar }}"
+        state: absent
+
+    - name: Create Node Exporter user
+      user:
+        name: node_exporter
+        shell: /bin/false
+        system: yes
+
+    - name: Create Node Exporter systemd service file
+      copy:
+        dest: "{{ service_file }}"
+        content: |
+          [Unit]
+          Description=Node Exporter
+          After=network.target
+
+          [Service]
+          User=node_exporter
+          ExecStart={{ install_dir }}/node_exporter
+
+          [Install]
+          WantedBy=multi-user.target
+
+    - name: Set ownership of service file
+      file:
+        path: "{{ service_file }}"
+        owner: node_exporter
+        group: node_exporter
+
+    - name: Reload systemd
+      systemd:
+        daemon_reload: yes
+
+    - name: Enable and start Node Exporter service
+      systemd:
+        name: node_exporter
+        enabled: yes
+        state: started
+
+    - name: Check Node Exporter service status
+      systemd:
+        name: node_exporter
+        state: status
 
 
 
