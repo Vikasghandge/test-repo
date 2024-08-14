@@ -45,4 +45,7 @@ cd /etc/ansible/
 sudo vim hosts
 paster your node server ip here 
 ex.   [ubuntuserver]
-  node-01 ansible_host
+  
+node-01 ansible_host=<your node-01 server ip>
+node-02 ansible_host=<your node-02 server ip>
+check 
