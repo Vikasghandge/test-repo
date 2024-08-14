@@ -123,6 +123,6 @@ sudo systemctl start node_exporter
 # Print status
 echo "Node Exporter installation completed. Checking status..."
 sudo systemctl status node_exporter
---------------------------------------------------------------------------------------chmod +x install_node_exporter.sh ----> adding exe
+--------------------------------------------------------------------------------------chmod +x install_node_exporter.sh ----> adding execution permission
 
 
