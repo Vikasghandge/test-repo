@@ -36,4 +36,4 @@ copy that key and paste this key into your node servers authrourized keys
 path for authroized keys 
 cd .ssh 
 sudo vim authroized keys
-paste the the ssh key here which you have created in 
+paste the the ssh key here which you have created in master server
