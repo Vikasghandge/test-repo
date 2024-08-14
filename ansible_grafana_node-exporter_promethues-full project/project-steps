@@ -227,6 +227,93 @@ first install prometheus
 sudo apt-get update
 sudo vim install_prometehus.sh
 
+#!/bin/bash
+
+# Variables
+PROMETHEUS_VERSION="2.42.0"  # Update to the latest version as needed
+PROMETHEUS_TAR="prometheus-${PROMETHEUS_VERSION}.linux-amd64.tar.gz"
+DOWNLOAD_URL="https://github.com/prometheus/prometheus/releases/download/v${PROMETHEUS_VERSION}/${PROMETHEUS_TAR}"
+INSTALL_DIR="/usr/local/bin"
+SERVICE_FILE="/etc/systemd/system/prometheus.service"
+
+# Update and install dependencies
+echo "Updating system and installing dependencies..."
+sudo apt-get update
+sudo apt-get install -y wget tar
+
+# Download Prometheus
+echo "Downloading Prometheus version ${PROMETHEUS_VERSION}..."
+wget "${DOWNLOAD_URL}" -O /tmp/${PROMETHEUS_TAR}
+
+# Extract the tarball
+echo "Extracting Prometheus..."
+sudo tar xvf /tmp/${PROMETHEUS_TAR} -C /tmp
+
+# Move binaries to the installation directory
+echo "Installing Prometheus binaries..."
+sudo mv /tmp/prometheus-${PROMETHEUS_VERSION}.linux-amd64/prometheus ${INSTALL_DIR}
+sudo mv /tmp/prometheus-${PROMETHEUS_VERSION}.linux-amd64/promtool ${INSTALL_DIR}
+
+# Clean up
+echo "Cleaning up..."
+rm -rf /tmp/prometheus-${PROMETHEUS_VERSION}.linux-amd64
+rm /tmp/${PROMETHEUS_TAR}
+
+# Create Prometheus user
+echo "Creating Prometheus user..."
+sudo useradd --no-create-home --shell /bin/false prometheus
+
+# Create necessary directories
+echo "Creating directories..."
+sudo mkdir -p /etc/prometheus
+sudo mkdir -p /var/lib/prometheus
+sudo chown prometheus:prometheus /var/lib/prometheus
+
+# Create Prometheus configuration file
+echo "Creating Prometheus configuration file..."
+cat <<EOL | sudo tee /etc/prometheus/prometheus.yml
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+EOL
+
+sudo chown prometheus:prometheus /etc/prometheus/prometheus.yml
+
+# Create Prometheus systemd service
+echo "Creating Prometheus service file..."
+cat <<EOL | sudo tee ${SERVICE_FILE}
+[Unit]
+Description=Prometheus Monitoring System
+Documentation=https://prometheus.io/docs/introduction/overview/
+After=network.target
+
+[Service]
+User=prometheus
+Group=prometheus
+ExecStart=${INSTALL_DIR}/prometheus \
+  --config.file=/etc/prometheus/prometheus.yml \
+  --storage.tsdb.path=/var/lib/prometheus/ \
+  --web.console.templates=/usr/share/prometheus/consoles \
+  --web.console.libraries=/usr/share/prometheus/console_libraries
+
+[Install]
+WantedBy=multi-user.target
+EOL
+
+# Set ownership and reload systemd
+echo "Setting ownership and reloading systemd..."
+sudo chown prometheus:prometheus ${SERVICE_FILE}
+sudo systemctl daemon-reload
+sudo systemctl enable prometheus
+sudo systemctl start prometheus
+
+# Print status
+echo "Prometheus installation completed. Checking status..."
+sudo systemctl status prometheus
 
 
 
