@@ -390,7 +390,8 @@ now take your master server ip with port 3000
 it will open grafana
 username --> admin
 password --> admin
-set 
+set password.
+in the grafana 
 
 
 
