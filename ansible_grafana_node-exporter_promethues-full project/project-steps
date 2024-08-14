@@ -27,5 +27,5 @@ sudo apt update -y
 # sudo apt install ansible -y
 sudo apt install ansible-core
 sudo chmod +x install_ansible.sh
-./install_
+./install_asnible.sh
 
