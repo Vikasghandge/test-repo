@@ -380,7 +380,8 @@ prometheus ----> 9090
 ____________________________________________________________________________________
 now need to add ip in prometheus
 cd /etc/prometheus
-sudo vim prometheus.yml ----> conig
+sudo vim prometheus.yml ----> config  yml file
+paste you
 
 
 
