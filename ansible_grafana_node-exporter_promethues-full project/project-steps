@@ -42,3 +42,5 @@ now we need to config our node servers ip into your master-server
 copy both node server ip
 in the master server 
 cd /etc/ansible/
+sudo vim hosts
+paster your 
