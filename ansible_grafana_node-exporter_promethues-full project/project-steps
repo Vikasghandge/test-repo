@@ -368,7 +368,7 @@ ________________________________________________________________________________
 
 verify through ip on google is it woring or not
 for node_exporter <your node server ip>:9100 
-ex. 192
+ex. 192.165.0.0:9100  ---> verify
 
 
 
