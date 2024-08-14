@@ -44,4 +44,5 @@ in the master server
 cd /etc/ansible/
 sudo vim hosts
 paster your node server ip here 
-ex.   
+ex.   [ubuntuserver]
+  
