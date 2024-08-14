@@ -387,7 +387,10 @@ ex. - target ['localhost:9100']
 replace 'localhost' with your node ip.
 now take your master server ip with port 3000
 <ip>:3000
-it will open garfana
+it will open grafana
+username --> admin
+password --> admin
+set 
 
 
 
