@@ -32,4 +32,5 @@ ________________________________________________________________________________
 we need to create ssh key for your node servers directs access
 ssh-keygen
 cat /home/ubuntu/.ssh/id_rsa.pub
-copy that key and paste this key into your node servers authro
+copy that key and paste this key into your node servers authrourized keys
+path 
