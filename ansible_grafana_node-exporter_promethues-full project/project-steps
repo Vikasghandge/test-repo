@@ -49,4 +49,4 @@ ex.   [ubuntuserver]
 node-01 ansible_host=<your node-01 server ip>
 node-02 ansible_host=<your node-02 server ip>
 check one this syntax on chatgtp.
-
+once check are you
