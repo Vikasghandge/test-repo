@@ -315,6 +315,6 @@ sudo systemctl start prometheus
 echo "Prometheus installation completed. Checking status..."
 sudo systemctl status prometheus
 ---------------------------------------------------------------------------------
-sudo chmod +x install_prometheus
+sudo chmod +x install_prometheus.sh ---> adding exe
 
 
