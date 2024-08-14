@@ -40,4 +40,5 @@ paste the the ssh key here which you have created in master server
 paste the key as it is another node server.
 now we need to config our node servers ip into your master-server
 take both node server ip
-in the mas 
+in the master server 
+ 
