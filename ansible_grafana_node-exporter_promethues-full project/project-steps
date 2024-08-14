@@ -365,6 +365,8 @@ fi
 sudo chmod +x install_grafana.sh  ---> adding execution permission
 ./install_grafana.sh  --> run grafana
 ____________________________________________________________________________________
+
+verify through ip on google is it woring or not
  
 
 
