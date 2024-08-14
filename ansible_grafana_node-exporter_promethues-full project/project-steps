@@ -29,4 +29,4 @@ sudo apt install ansible-core
 sudo chmod +x install_ansible.sh
 ./install_asnible.sh
 ____________________________________________________________________________________
-we need to create ssh
+we need to create ssh key for your node 
