@@ -51,4 +51,5 @@ node-02 ansible_host=<your node-02 server ip>
 check one this syntax on chatgtp.
 once check are you able to take ssh your node servers or not
 ssh <node-server_ip>
-ansible -m ping 
+ansible -m ping all.
+
