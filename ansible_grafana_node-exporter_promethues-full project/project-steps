@@ -35,3 +35,4 @@ cat /home/ubuntu/.ssh/id_rsa.pub
 copy that key and paste this key into your node servers authrourized keys
 path for authroized keys 
 cd .ssh 
+sudo vim auth
