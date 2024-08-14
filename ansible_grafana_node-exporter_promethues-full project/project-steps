@@ -59,4 +59,5 @@ ansible-playbook-vs-code-guide check this files
 ______________________________________________________________________________________
 now we have sucessfully did setup our ansible and node servers now we need to setup 
 grafana promethueus and node_exporter
-first of all 
+first of all take ssh of your node servers
+sudon
