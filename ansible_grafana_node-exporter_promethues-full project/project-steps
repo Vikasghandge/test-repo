@@ -126,6 +126,7 @@ sudo systemctl status node_exporter
 --------------------------------------------------------------------------------------chmod +x install_node_exporter.sh ----> adding execution permission
 ./install_node_exporter.sh  -----> running node exporter
 check node_exporter --version
+______________________________________________________________________________________
 
 
 
