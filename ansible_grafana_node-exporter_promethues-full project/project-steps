@@ -223,6 +223,7 @@ now we have sucessfully installed node_expo in your node servers now we need to 
 grafana and prometheus on your master-servers
 ___________________________________________________________________________________
 take ssh of master server
-first install 
+first install prometheus
+
 
 
