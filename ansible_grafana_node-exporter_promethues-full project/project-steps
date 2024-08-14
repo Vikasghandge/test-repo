@@ -384,6 +384,7 @@ sudo vim prometheus.yml ----> config  yml file
 paste your node-serves ip here fo target.
 
 ex. - target ['localhost:9100']
+replace 'localhost' with your node ip.
 
 
 
