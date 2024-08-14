@@ -219,6 +219,6 @@ ex.   node_install.yml
 paste the contain and pull this play book on your server and run it.
 ex. ansible-playbook <your play booke name> node_install.yml
 ______________________________________________________________________________________
-now we have 
+now we have sucessfully installed 
 
 
