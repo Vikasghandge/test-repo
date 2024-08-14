@@ -43,4 +43,5 @@ copy both node server ip
 in the master server 
 cd /etc/ansible/
 sudo vim hosts
-paster your 
+paster your node server ip here 
+ex.   
