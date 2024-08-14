@@ -321,6 +321,6 @@ prometehus setup done now setup grafana.
 __________________________________________________________________________________
 
 sudo apt-get update
-sudo vim install_grafana
+sudo vim install_grafana.sh
 
 
