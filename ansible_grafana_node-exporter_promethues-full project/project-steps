@@ -53,4 +53,4 @@ once check are you able to take ssh your node servers or not
 ssh <node-server_ip>
 ansible -m ping all.
 confirm ping pong
-if o
+if you want more about ansible 
