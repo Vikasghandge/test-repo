@@ -383,7 +383,7 @@ cd /etc/prometheus
 sudo vim prometheus.yml ----> config  yml file
 paste your node-serves ip here fo target.
 
-ex. - target
+ex. - target ['localhost:<]
 
 
 
