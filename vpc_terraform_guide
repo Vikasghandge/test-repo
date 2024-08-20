@@ -36,4 +36,4 @@ availability_zone =
 map_public_ip_on_launch = true
 tags =
 #############################################
-resoucre
+resource = aws
