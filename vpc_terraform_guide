@@ -24,4 +24,5 @@ tags =
 resource = aws_subnet "name"
 vpc_id =
 cidr_block =
-availability
+availability_zone =
+
