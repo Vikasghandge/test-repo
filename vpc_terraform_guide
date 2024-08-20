@@ -8,3 +8,4 @@ region = region_name  <ap-south-1>
 
 resource = aws_instance <name>
 ami = ami_id
+instance
