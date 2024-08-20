@@ -41,4 +41,4 @@ vpc_id =
 tags =
 ######################################
 resource = aws_route_table "public-rt"
-vpc
+vpc_id =
