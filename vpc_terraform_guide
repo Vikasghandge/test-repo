@@ -17,4 +17,4 @@ tags {
 # create vpc using terraform .
 
 resource = aws_vpc
-cidr_block = 
+cidr_block = "192.168.0.0/
