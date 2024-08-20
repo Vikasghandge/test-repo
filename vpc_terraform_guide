@@ -2,4 +2,5 @@ if we want to create vpc using the terraform we need to infrastucture.
 
 syntx:   we need to specify provider.
 
-provider -
+provider = aws
+name = pr
