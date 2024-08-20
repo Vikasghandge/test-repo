@@ -38,3 +38,5 @@ tags =
 #############################################
 resource = aws_internet_gateway "internet"
 vpc_id = 
+tags =
+
