@@ -22,4 +22,6 @@ tags =
 
 ##########################
 resource = aws_subnet "name"
-vpc
+vpc_id =
+cidr_block =
+
