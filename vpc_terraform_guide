@@ -8,4 +8,5 @@ region = region_name  <ap-south-1>
 
 resource = aws_instance <name>
 ami = ami_id  ----->  "************"
-instance_type = "type"  ----> "
+instance_type = "type"  ----> "t2.micro"
+key 
