@@ -7,5 +7,5 @@ name = provider_name  <>
 region = region_name  <ap-south-1>
 
 resource = aws_instance <name>
-ami = ami_id
-instance_type = "
+ami = ami_id  ----->  
+instance_type = "type"
