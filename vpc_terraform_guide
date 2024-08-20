@@ -7,4 +7,4 @@ name = provider_name  <>
 region = region_name  <ap-south-1>
 
 resource = aws_instance <name>
-ami = ami
+ami = ami_id
