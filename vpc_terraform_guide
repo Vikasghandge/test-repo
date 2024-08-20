@@ -4,3 +4,4 @@ syntx:   we need to specify provider.
 
 provider = aws
 name = provider_name
+region 
