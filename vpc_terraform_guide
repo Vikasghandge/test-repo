@@ -17,4 +17,4 @@ tags {
 # create vpc using terraform .
 
 resource = aws_vpc
-cidr
+cidr_block = 
