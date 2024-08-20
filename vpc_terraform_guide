@@ -22,4 +22,4 @@ tags =
 
 ##########################
 resource = aws_subnet "name"
-
+vpc
