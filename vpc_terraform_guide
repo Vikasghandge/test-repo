@@ -4,4 +4,4 @@ syntx:   we need to specify provider.
 
 provider = aws   <aws>
 name = provider_name  <>
-region = region_name  <ap>
+region = region_name  <ap-south-1>
