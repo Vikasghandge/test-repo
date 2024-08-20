@@ -37,4 +37,4 @@ map_public_ip_on_launch = true
 tags =
 #############################################
 resource = aws_internet_gateway
-
+vpc_id = 
