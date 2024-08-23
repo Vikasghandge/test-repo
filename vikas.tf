@@ -11,3 +11,5 @@ resource "aws_instance" "server_1" {
      }
 } 
 
+resource "awc_vpc" "name" {
+}
