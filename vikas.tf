@@ -3,6 +3,6 @@ provider "aws" {
 }
 
 resource "aws_instance" "server_1" {
-    ami
-    
-}
+    ami = "value"
+    instance_type = "value"
+} 
