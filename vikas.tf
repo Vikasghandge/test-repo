@@ -5,4 +5,5 @@ provider "aws" {
 resource "aws_instance" "server_1" {
     ami = "value"
     instance_type = "value"
+     key_name = "value"
 } 
