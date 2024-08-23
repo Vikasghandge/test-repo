@@ -12,5 +12,6 @@ resource "aws_instance" "server_1" {
 } 
 
 resource "aws_vpc" "my_vpc" {
+    cidr_block = ""
     
 }
