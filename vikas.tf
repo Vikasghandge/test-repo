@@ -11,5 +11,6 @@ resource "aws_instance" "server_1" {
      }
 } 
 
-resource "aws_vp" "name" {
+resource "aws_vpc" "my_vpc" {
+    
 }
