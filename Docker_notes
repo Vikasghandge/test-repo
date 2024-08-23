@@ -1,0 +1,10 @@
+what is  a docker?
+docker is a contanizaration tool which is use for make a containers.
+docker is a open source which is bascially use to build and run application.
+
+about containers __
+one container at a single time can run only one process.
+container means like a small virtual machines. os liberary file make containers.
+1 cpu = 1000 millicores
+what is mirco_services = microservices means to breaking your service into small small services this is call microservices.
+what is virtualizer and how it works ---> virtualizer is a technology which help to create multipe virtual machine using physcial hardware.
