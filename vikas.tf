@@ -10,3 +10,4 @@ resource "aws_instance" "server_1" {
        "name" = "ec2_instance"
      }
 } 
+
