@@ -1,1 +1,3 @@
-pr
+provider "aws" {
+    region = 
+}
