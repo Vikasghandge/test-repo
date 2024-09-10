@@ -1,0 +1,85 @@
+# your instance shoud be t2.medium or any which can have more than 2 cpus  --- must
+#Installation Steps
+#1. Installing Docker
+#if docker not installed properly then downlode it from docker engine offical.
+
+# Docker is not installed.
+sudo apt-get install docker.io -y 
+sudo usermod -aG docker $USER && newgrp docker
+
+# Updating system packages and installing Minikube dependencies.
+sudo apt update & sudo apt upgrade 
+ sudo apt install -y curl wget apt-transport-https
+
+# Installing Minikube
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+
+# Once the binary is downloaded, copy it to the path /usr/local/bin and set the executable permissions on it
+
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
+# Verify the minikube version
+minikube version
+ #output
+# minikube version: v1.32.0
+# commit: 8220a6eb95f0a4d75f7f2d7b14cef975f050512d
+
+# Installing kubectl utility
+curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s
+ https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+
+ # Once Kubectl is downloaded, set the executable permissions on the Kubectl binary and move it to the path /usr/local/bin.
+ chmod +x kubectl
+ sudo mv kubectl /usr/local/bin/
+
+ # Now verify the kubectl version
+ kubectl version -o yaml
+
+ # Start minikube
+ minikube start --driver=docker
+
+ # Verifying Installation
+ minikube status
+ #output
+# minikube
+# type: Control Plane
+# host: Running
+# kubelet: Running
+# apiserver: Running
+# kubeconfig: Configured.
+
+kubectl cluster-info
+
+# output
+# Kubernetes control plane is running at https://192.168.49.2:8443
+# CoreDNS is running at https://192.168.49.2:8443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+
+# To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+
+kubectl get nodes
+# // NAME       STATUS   ROLES           AGE     VERSION
+# // minikube   Ready    control-plane   3m27s   v1.30.0
+
+#addons list
+minikube addons list
+
+# enable matrics
+minikube addons enable metrics-server
+
+# Dashboard 
+minikube dashboard
+
+minikube dashboard --url
+
+kubectl proxy --address='0.0.0.0' --disable-filter=true &
+  #output 
+#W0423 04:59:24.539492   15291 proxy.go:177] Request filter disabled, your proxy is vulnerable to XSRF attacks, please be cautious
+# Starting to serve on [::]:8001
+
+# Use server IP and port [::]:8001 and use url /api/v1/namespaces/kubernetes-dashboard/services/http:
+# kubernetes-dashboard:/proxy/
+
+http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/#/workloads?namespace=default
+
+--- # ADD YOUR SERVER IP ---
+    THEN SELECT NODE INTO DASHBOARD.
