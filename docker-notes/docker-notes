@@ -92,3 +92,5 @@ networking types in docker.
 5 MACIPLAN - macvlan is another advanced option that allows containers to appear as physical devices on your network. It works by assigning each container in the network a unique MAC address.
 6 OVERLAY -->  overlay communicate with diffrent host and network.
 
+
+
