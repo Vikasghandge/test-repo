@@ -1,1 +1,85 @@
+what is  a docker?
+docker is a contanizaration tool which is use for make a containers.
+docker is a open source which is bascially use to build and run application.
+
+about containers __
+one container at a single time can run only one process.
+container means like a small virtual machines. container use to run progrm liberary file make containers.
+1 cpu = 1000 millicores
+what is mirco_services = microservices means to breaking your service into small small services this is call microservices.
+what is virtualizer and how it works ---> virtualizer is a technology which help to create multipe virtual machine using physcial hardware.
+what is containers?
+--> conatainer are notheing but small virtal machines.
+
+there are two type of docker addition.
+one is enterprise addition and another is community addtion.
+
+docker installations packges file path
+cd /etc/apt/ 
+
+[docker basic commands]
+docker run nginx ---> it will create a container 
+docker ps --> it will show all running process.
+docker ps -a --> it will show stopped process.
+docker run -d nginx ---> it will run process into background.
+docker rename 100(container_id) <new name> --> it will rename existing container.
+doker inspector ---> all info about container.
+docker log --> it will show docker log.
+docker exec -i -t (container_id) shell name ex /bin/bash/ -->  using this command we can access docker conatiner. 
+docker exec (container-id) touch /opt/add any file name --> this command allow you to create file inside the conatiner by local machine.
+docker images ---> it will show images list 
+dcoker stop (container_id) ---> it will stop the running conatiner.
+docker rmi -f (image_id) ---> this commmand will rmi delete image.
+docker events ---> 
+what is docker bridge network --->  docker bridge network allows to continers to communicate with each other within same network.
+
+what is port mapping in docker --> port mapping basically use to expose docker port to hostmachine to accsee via internate.
+we access the continer using local machine and docker port.
+docker run -d -p 80:80 image_id ----> it will expose on port 80.
+
+what is docker file
+--> docker file use to create docker images it takes the instructions from docker file and it will create images.
+its like set of commands or instruction file.
+
+what is docker image 
+docker image is like preconfigured templets it can have dependecies,  all files, and liberires to run your applications.
+
+now let's see how to write docker file.
+_________________________________________________________________________________________________
+
+FROM: it will set the base image to instruct your file.
+LABEL/MAINTAINER: lebel means are tags.
+RUN: it will execute any command.
+ADD: this command will add file or anything form remote location. ex suppose if you want to fetch data from s3 bucket you can use add.  It can extract tar files.
+COPY: this command will copy content form local to continer. ex xyz.txt to /opt/ in your container.
+EXPOSE: it will tell the docker to listen on specifed network. it will expose your container port.
+WORKDIR: it will set workdirectory where you want to work.
+CMD: it will run the process. this command will execute after container creation.
+ENTERYPOINT: it same like cmd it will start after container creaion. but i wont overridden.
+ENV: variables are used to pass runtime variables into Docker containers, and they are available to containers at runtime.
+ARG:  The Docker ARG is an instruction that is used inside the Dockerfile for defining build-time variables.
+_________________________________________________________________________________________________
+
+some interview questions.
+what is diffrence between copy and add.
+COPY - is basically use to copy content local machine to docker continer.
+ADD - while add can also copy from local machine to docker image or conatiner but add has one addion feature add can copy and downlode remotely.
+it can extract tar files.
+ 
+what is diffrence between entery point and cmd. CMD - is basically use to execute process after the continer run but it can be overridden.
+ex docker run echo "hello" nginx.  
+ 
+ENTRY POINT: its same like a cmd it will execute after container start.
+but it wont be overridden. when you pass value.
+
+what is a diffrence between run and cmd.
+RUN - run is use to install packages and software and run commands while images building.
+CMD - while cmd is defualt command it will execute inside the container after the container start not while image build.
+main diff is run execute while image building while cmd execute into conatiner after start.
+
+what is diffrence between arg and env.
+ARG - ARG is used to pass variables during the image build process. These variables are available only while building the Docker image, and they are not accessible once the container is running.
+
+ENV -  ENV is used to define environment variables that are available both during build and at runtime. These variables are accessible when the container is running.
+
 
