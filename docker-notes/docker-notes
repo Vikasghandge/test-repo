@@ -14,7 +14,7 @@ what is containers?
 there are two type of docker addition.
 one is enterprise addition and another is community addtion.
 
-docker installations packges file path
+docker installations package file path
 cd /etc/apt/ 
 
 [docker basic commands]
@@ -33,8 +33,8 @@ docker rmi -f (image_id) ---> this commmand will rmi delete image.
 docker events ---> 
 what is docker bridge network --->  docker bridge network allows to continers to communicate with each other within same network.
 
-what is port mapping in docker --> port mapping basically use to expose docker port to hostmachine to accsee via internate.
-we access the continer using local machine and docker port.
+what is port mapping in docker --> port mapping basically use to expose docker port to host machine to access via internate.
+we access the container using local machine and docker port.
 docker run -d -p 80:80 image_id ----> it will expose on port 80.
 
 what is docker file
@@ -82,4 +82,13 @@ ARG - ARG is used to pass variables during the image build process. These variab
 
 ENV -  ENV is used to define environment variables that are available both during build and at runtime. These variables are accessible when the container is running.
 
+docker build -t <name your container> .
+ 
+networking types in docker.
+1 BRIDGE - it helps to container to communicate with each other within same network.
+2 NONE -  IP addresses won’t be assigned to containers. These containments are not accessible to us from the outside or from any other container.
+3 HOST - Containers will not have any IP address they will be directly created in the system network which will remove isolation between the docker host and containers. 
+4 IPVLAN -IPvLAN is an advanced driver that offers precise control over the IPv4 and IPv6 addresses assigned to your containers, as well as layer 2 and 3 VLAN tagging and routing.
+5 MACIPLAN - macvlan is another advanced option that allows containers to appear as physical devices on your network. It works by assigning each container in the network a unique MAC address.
+6 OVERLAY -->  overlay communicate with diffrent host and network.
 
