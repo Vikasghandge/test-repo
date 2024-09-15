@@ -91,6 +91,8 @@ networking types in docker.
 4 IPVLAN -IPvLAN is an advanced driver that offers precise control over the IPv4 and IPv6 addresses assigned to your containers, as well as layer 2 and 3 VLAN tagging and routing.
 5 MACIPLAN - macvlan is another advanced option that allows containers to appear as physical devices on your network. It works by assigning each container in the network a unique MAC address.
 6 OVERLAY -->  overlay communicate with diffrent host and network.
-
+ 
+NETWORKING COMMANDS. 
+docker network crate <your network name>
 
 
