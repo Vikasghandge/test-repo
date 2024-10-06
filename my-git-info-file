@@ -16,6 +16,7 @@ git config --global user.email "your git password ********* "
 to check run command git config --list ----> it will show list of config users
 now you can use git  clone command.
 git clone https://github.com/Vikasghandge/test-repo.git  ----> this commnad will clone your repo into your machine basically it will create one copy repo on your machine.  <------  this is for public repository
+git clone --mirror <repository-url>     ---> this command will clone repo with all branches
 
 for private repository.
 git clone https://<add here your token url > @github.com/Vikasghandge/test-repo.git ---> with help of this you can access privte repository.
