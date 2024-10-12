@@ -1,5 +1,5 @@
 git guidence -------
-first of all create you need to create your account on git.
+first of all you need to create your account on git.
 make sure don't forget your git username and password.
 now lets start creating git repository. 
 create one reop give the name to repo ex[my_test-repo] and add readme file into that repo.
@@ -9,15 +9,25 @@ go into git setting scroll down to end you will get devlpoer setting then create
 and keep it private make sure,
 now your repo ready to clone on your machine.
 take ssh of your server then create one directory [viksa] cd vikas for public git-repo you need to run some commands.
-cd /vikas    
+cd /vikas
+```
 git init
+```
+```
 git config --global user.name "vikasghandge"
+```
+```
 git config --global user.email "your git password ********* "
+```
 to check run command git config --list ----> it will show list of config users
 now you can use git  clone command.
-git clone https://github.com/Vikasghandge/test-repo.git  ----> this commnad will clone your repo into your machine basically it will create one copy repo on your machine.  <------  this is for public repository
+```
+git clone https://github.com/Vikasghandge/test-repo.git  #----> this commnad will clone your repo into your machine basically it will create one copy repo on your machine. 
+<------  this is for public repository
+```
+```
 git clone --mirror <repository-url>     ---> this command will clone repo with all branches
-
+```
 for private repository.
 git clone https://<add here your token url > @github.com/Vikasghandge/test-repo.git ---> with help of this you can access privte repository.
 after successfully clone your repo into machine you can create files or directories and branhes.
