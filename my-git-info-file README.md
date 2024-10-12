@@ -100,3 +100,18 @@ git stash        #----> it will save temporary file in case if you dont want sav
 | **When to Use**       | Use for collaborative work where history matters.    | Use for maintaining a clean commit history (e.g., before merging a feature branch). |
 
 
+### diffrence between git pull and fetch
+
+| Feature               | git fetch                                           | git pull                                        |
+|-----------------------|-----------------------------------------------------|------------------------------------------------|
+| **Purpose**           | Retrieves the latest changes from the remote without applying them to your working branch. | Retrieves the latest changes from the remote and merges them into your current branch. |
+| **Working Directory** | Does not change the working directory or branch.   | Updates your working directory and branch with remote changes. |
+| **Commit History**    | Only downloads remote commits; no merge or rebase occurs. | Downloads and merges (or rebases) changes into your local branch. |
+| **Command Behavior**  | Safe to use; no changes to the current branch.      | Can cause conflicts if local changes diverge from remote. |
+| **Command Example**   | `git fetch origin main`                             | `git pull origin main`                          |
+| **Use Case**          | Use when you want to see changes before integrating them. | Use when you want to update your branch directly with remote changes. |
+| **Risk**              | No risk to local changes.                           | Potential conflicts if local and remote changes differ. |
+| **When to Use**       | Use to inspect or review changes before merging.    | Use to quickly sync with remote changes. |
+
+
+
