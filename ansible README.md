@@ -53,6 +53,7 @@ On the master server, create a working directory and install Ansible.
 ```bash
 ssh ubuntu@<master-server-ip>
 mkdir vikas && cd vikas
+```
 
 ```
 #!/bin/bash
@@ -146,3 +147,19 @@ This **interactive README.md** uses:
 You can paste this into your repository's `README.md`, and it will render perfectly on GitHub!
 ```
 cdv
+
+
+```
+---
+- hosts: ubuntuserves  # Group defined in your inventory file
+  become: true         # Run tasks with sudo privileges
+  tasks:
+    - name: Update the package list
+      apt:
+        update_cache: yes
+
+    - name: Install NGINX
+      apt:
+        name: nginx
+        state: present
+```
