@@ -88,3 +88,15 @@ git stash        #----> it will save temporary file in case if you dont want sav
 ```
 .gitignore ---> git will not track gitignore
 
+| Feature               | git merge                                            | git rebase                                     |
+|-----------------------|------------------------------------------------------|------------------------------------------------|
+| **Purpose**           | Combines two branches, creating a new merge commit.  | Moves your branch to the tip of another branch by replaying commits. |
+| **Commit History**    | Preserves the full history, showing all branch points. | Rewrites history to create a linear sequence of commits. |
+| **Commit Structure**  | A merge commit is created, representing the join.    | No merge commit; commits are replayed on the new base. |
+| **Use Case**          | When you want to preserve the original branch history. | When you want a clean, linear history for readability. |
+| **Conflict Handling** | Conflicts resolved during the merge process.         | Conflicts need to be resolved for each commit during rebase. |
+| **Command Example**   | `git merge feature-branch`                           | `git rebase main`                             |
+| **Risk**              | Less risky since it doesn’t rewrite history.         | Risky if pushed branches are rebased, leading to divergence. |
+| **When to Use**       | Use for collaborative work where history matters.    | Use for maintaining a clean commit history (e.g., before merging a feature branch). |
+
+
