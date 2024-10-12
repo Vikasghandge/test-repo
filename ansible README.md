@@ -174,3 +174,23 @@ cdv
         name: nginx
         state: present
 ```
+
+## apache play-book
+
+```
+---
+- hosts: demo
+  become: yes
+  tasks:
+    - name: Install Apache on your server
+      apt:
+        name: apache2
+        state: present
+        update_cache: yes
+
+    - name: Ensure Apache is running
+      service:
+        name: apache2
+        state: started
+        enabled: yes
+```
