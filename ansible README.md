@@ -1,15 +1,26 @@
 first of all setup your master server and node server.
+
 master-server & node-server setup has given in ansible-guide file checkout.
+
 crate any empty folder in your file manager like <demofolder>.
+
 in visual code open that folder.
+
 now you need to clone your repository on visual code.
+
 {command} ctrl+shift+p ----> it will open some options select git clone and select github and your repository.
+
 then again ctrl+shift+p git auto init and then ctrl+shift+p auto git restart.
+
 now you can create your file select create file and create file.
 make sure in your visual code <yaml,  auto git,   and  ansible must have> to downloade this go into extension and downlode it.
+
 when will you create ansible playbook that file must have yaml extension like <example.yml>.
+
 after create yaml playbook go into your master server clone there same repository.
+
 run command <git pull origin main>  it will show most updated repository.
+
 to run playbook  = <anisble-playbook path playbook name>.
 
 
