@@ -1,14 +1,22 @@
 git guidence -------
+
 first of all you need to create your account on git.
+
 make sure don't forget your git username and password.
+
 now lets start creating git repository. 
+
 create one reop give the name to repo ex[my_test-repo] and add readme file into that repo.
+
 if your repo is public then no need to ssh or token but if your repo is private then you have to crate on token.
 how to create token?
+
 go into git setting scroll down to end you will get devlpoer setting then create one classic token.
 and keep it private make sure,
 now your repo ready to clone on your machine.
+
 take ssh of your server then create one directory [viksa] cd vikas for public git-repo you need to run some commands.
+
 cd /vikas
 ```
 git init
@@ -29,27 +37,54 @@ git clone https://github.com/Vikasghandge/test-repo.git  #----> this commnad wil
 git clone --mirror <repository-url>     ---> this command will clone repo with all branches
 ```
 for private repository.
-git clone https://<add here your token url > @github.com/Vikasghandge/test-repo.git ---> with help of this you can access privte repository.
+```
+git clone https://<add here your token url > @github.com/Vikasghandge/test-repo.git   # ---> with help of this you #can access privte repository.
+```
+
 after successfully clone your repo into machine you can create files or directories and branhes.
 lets create one file 
+
 cd /vikas/my_test-repo     touch example.txt
+
 git add (.) for all or exmaple.txt ----> git add command will add your file into staging area.
-git commit -m " adding example.txt into remote repo" ---> it will commit changes and create snapshor or backup
+
+git commit -m " adding example.txt into remote repo"  #---> it will commit changes and create snapshor or backup
 it will generate commit id [git log] <----- for git logs.
-git push origin main ----> this command will push your file into remote repository finally.
-git pull origin main ----> this command will retrive data direct into your working area.
+
+```
+git push origin main     # ----> this command will push your file into remote repository finally.
+```
+```
+git pull origin main    #----> this command will retrive data direct into your working area.
+```
 it is combination of git fetch and git merge changes into your working directory.
-git fetch origin main ----> this command will retrive your data into local repo from remote repo.
+```
+git fetch origin main ---->     #this command will retrive your data into local repo from remote repo.
+```
 suppose if you by mistaken deleted your file from local how to retrive.
-git checkout -f ----> this command will retrive back your file.
+```
+git checkout -f  # ----> this command will retrive back your file.
+```
 suppose you have removed very important file from your local as well as from your remote repository then how would you retrive this file?
 use command    git log  find out commit id where you had deleted that impo file and copy it.
+```
 git revert <your commit id>
+```
 it will retrive your file then you can push it again into your remote repository.
-git branch -----> it will show all branches
-git branch <devops> <----- it will create new branch
-git checkout -b <devops2> ----> this will create new branch and switch that branch
-git merge <branch name> ----> git merge it will merge two branche with togather.
-git stash ----> it will save temporary file in case if you dont want save this file now.
+```
+git branch          #----->    #it will show all branches
+```
+```
+git branch <devops>   # <----- it will create new branch
+```
+```
+git checkout -b <devops2>     ----> this will create new branch and switch that branch
+```
+```
+git merge <branch name>           # ----> git merge it will merge two branche with togather.
+```
+```
+git stash        #----> it will save temporary file in case if you dont want save this file now.
+```
 .gitignore ---> git will not track gitignore
 
