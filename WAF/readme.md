@@ -12,7 +12,8 @@
 - ADD USER CONTENT LIKE THIS
 ```
 #!/bin/bash
-echo "Hi This Is Vicky Testing WAF" >> /var/www/html
+echo "Hi This Is Vicky Testing WAF" >> /var/www/html/index.html
+
 
 ```
 - LAUNCH SERVER ALLOW SSH AND HTTP PROTOCOL.
