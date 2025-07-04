@@ -22,6 +22,17 @@
 - kubectl get events
 - if the you need cpu increase the limit of cpu if it is 500 m do it 800 m.
 
-####
+#### Q5] IF ACCIDENTALLY YOU PUSHED YOU DEV AND TEST ENV INTO THE PRODUCTION AN OVERWRITE YOUR PROD INFRA IN CASE WHAT STEPS WOULD TO TAKE THE SORT OUT THIS.
+- acess the damage.
+- check the terraform state which is changed using commnd: 'terraform state list' / 'terraform plan'
+- step: 2)  check for the terraform make have created backup of your prod infra: 'ls -la terraform.tfstate.backup*'
+- restore the previous version of tfstatefile from s3 buccket
+- steps 3] manaually find out what are the changes happen and reomove unneccessary changes.
+- steps use blue green deployment stratigy create seprate infra using previous statefile infra create it then switch the traffic to new infra delete old infra.
+- step 4] precautions to prevent this kind of conflicts.
+- 1) always keep backups of infra into remote location.
+  2) use terraform workspace to avoid conflicts .
+  3) and before applying the changes always add approval stage
+  4) proper tag resources and name like prod or dev or test.
 
   
