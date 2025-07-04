@@ -114,7 +114,7 @@ vi install_docker.yml
         msg: "Docker installation successful! Hello World container ran successfully."
 ```
 
-==================================================================================================================
+============================================================================================
 ------------------------------------------------------------------------------------------------------------------
 ### Install jenkins Using PlayBook
 vi install_jenkins.sh
@@ -161,6 +161,51 @@ vi install_jenkins.sh
         enabled: yes
         state: started
 ```
+
+===================================================================================
+### Install Trivy Using Ansible:
+vi install_trivy.sh
+```
+---
+- name: Install Trivy on Ubuntu
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Install dependencies
+      apt:
+        name:
+          - wget
+          - apt-transport-https
+          - gnupg
+        state: present
+        update_cache: yes
+
+    - name: Add Trivy GPG key
+      ansible.builtin.shell: |
+        wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | \
+        gpg --dearmor | \
+        tee /usr/share/keyrings/trivy.gpg > /dev/null
+      args:
+        executable: /bin/bash
+
+    - name: Add Trivy repository
+      copy:
+        dest: /etc/apt/sources.list.d/trivy.list
+        content: |
+          deb [signed-by=/usr/share/keyrings/trivy.gpg] https://aquasecurity.github.io/trivy-repo/deb generic main
+
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install Trivy
+      apt:
+        name: trivy
+        state: present
+
+```
+
 
 
 
