@@ -113,3 +113,54 @@ vi install_docker.yml
       debug:
         msg: "Docker installation successful! Hello World container ran successfully."
 ```
+
+==================================================================================================================
+------------------------------------------------------------------------------------------------------------------
+### Install jenkins Using PlayBook
+vi install_jenkins.sh
+
+```
+---
+- name: Install Jenkins on Ubuntu Server
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Update APT package index
+      apt:
+        update_cache: yes
+
+    - name: Install OpenJDK 17
+      apt:
+        name: openjdk-17-jdk
+        state: present
+
+    - name: Download Jenkins GPG key
+      get_url:
+        url: https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+        dest: /usr/share/keyrings/jenkins-keyring.asc
+
+    - name: Add Jenkins APT repository
+      apt_repository:
+        repo: "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/"
+        filename: jenkins
+        state: present
+
+    - name: Update APT cache after adding Jenkins repo
+      apt:
+        update_cache: yes
+
+    - name: Install Jenkins
+      apt:
+        name: jenkins
+        state: present
+
+    - name: Ensure Jenkins is enabled and started
+      systemd:
+        name: jenkins
+        enabled: yes
+        state: started
+```
+
+
+
